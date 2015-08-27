@@ -1,0 +1,48 @@
+name       : plexhometheater
+version    : 1.4.1.469
+release    : 1
+source     :
+    - https://github.com/plexinc/plex-home-theater-public/archive/v1.4.1.469-47a90f01.tar.gz : 82a0b3314de18e0f1bdb123c6fe4d411e147b052a09219a9d2057459dc0f36b3
+license    : GPL-2.0 # CHECK ME
+summary    : PLEASE FILL ME IN
+description: |
+    PLEASE FILL ME IN
+builddeps  :
+    - pkgconfig(sdl)
+    - pkgconfig(alsa)
+    - pkgconfig(avahi-core)
+    - libboost-devel
+    - pkgconfig(expat)
+    - pkgconfig(freetype2)
+    - pkgconfig(fribidi)
+    - pkgconfig(glew)
+    - pkgconfig(glu)
+    - pkgconfig(libavcodec)
+    - pkgconfig(libcdio)
+    - pkgconfig(gl)
+    - libjpeg-turbo-devel
+    - libmad-devel
+    - pkgconfig(libmicrohttpd)
+    - pkgconfig(libmpeg2)
+    - pkgconfig(libpng)
+    - pkgconfig(libtiff-4)
+    - pkgconfig(libpulse)
+    - pkgconfig(SDL_image)
+    - pkgconfig(SDL_mixer)
+    - pkgconfig(samplerate)
+    - pkgconfig(libssh)
+    - pkgconfig(sqlite3)
+    - pkgconfig(libva)
+    - pkgconfig(vdpau)
+    - lzo-devel
+    - pkgconfig(x11)
+    - pkgconfig(xext)
+    - xrandr
+    - pkgconfig(libpcre)
+    - pkgconfig(taglib)
+setup      : |
+    %cmake .
+build      : |
+    %make
+install    : |
+    %make_install
