@@ -8,38 +8,43 @@ summary    : Plex Home Theater
 description: |
     Plex Home Theater full-screen media player.
 builddeps  :
-    - pkgconfig(sdl)
+    - libboost-devel
+    - libjpeg-turbo-devel
+    - libmad-devel
+    - lzo-devel
+    - swig
+    - xrandr
     - pkgconfig(alsa)
     - pkgconfig(avahi-core)
-    - libboost-devel
     - pkgconfig(expat)
     - pkgconfig(freetype2)
     - pkgconfig(fribidi)
+    - pkgconfig(gl)
     - pkgconfig(glew)
     - pkgconfig(glu)
     - pkgconfig(libavcodec)
     - pkgconfig(libcdio)
-    - pkgconfig(gl)
-    - libjpeg-turbo-devel
-    - libmad-devel
+    - pkgconfig(libcec)
     - pkgconfig(libmicrohttpd)
     - pkgconfig(libmpeg2)
+    - pkgconfig(libpcre)
+    - pkgconfig(libplist)
     - pkgconfig(libpng)
-    - pkgconfig(libtiff-4)
     - pkgconfig(libpulse)
-    - pkgconfig(SDL_image)
-    - pkgconfig(SDL_mixer)
-    - pkgconfig(samplerate)
     - pkgconfig(libssh)
-    - pkgconfig(sqlite3)
+    - pkgconfig(libtiff-4)
     - pkgconfig(libva)
+    - pkgconfig(samplerate)
+    - pkgconfig(sdl)
+    - pkgconfig(sdl_image)
+    - pkgconfig(sdl_mixer)
+    - pkgconfig(sqlite3)
+    - pkgconfig(taglib)
+    - pkgconfig(tinyxml2)
     - pkgconfig(vdpau)
-    - lzo-devel
     - pkgconfig(x11)
     - pkgconfig(xext)
-    - xrandr
-    - pkgconfig(libpcre)
-    - pkgconfig(taglib)
+    - pkgconfig(yajl)
 setup      : |
     %cmake .
 build      : |
